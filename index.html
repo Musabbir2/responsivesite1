@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,600&family=Supermercado+One&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>MusaCafe</title>
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="row clearfix">
+               <img class="logo" src="images/Logo.png" alt="logo">
+
+               <ul class="main-nav animate__animated animate__bounce" id="check-class">
+                <li><a href="#">Coffe Delivery</a></li>
+                <li><a href="#">How to order</a></li>
+                <li><a href="#">Check more</a></li>
+                <li><a href="#">Sing up</a></li>
+               </ul>
+               <a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+           </div> 
+        </nav>
+        <div class="main-content-header">
+        <h1>Welcome to <span class="colorchange">Musa cafe</span> .<br> house of cake lover oo yes </h1>
+        <a href="#" class="btn btn-full">Click to order</a>
+        <a href="#" class="btn btn-nav">Show me more</a>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        function slideshow(){
+            var x = document.getElementById('check-class');
+            if(x.style.display === "none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
